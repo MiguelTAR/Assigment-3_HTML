@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Event Tickets</title>
+    <style>
+      .title {
+        font-weight: bolder;
+        font-size: 100px;
+      }
+
+      .mail_box {
+        position: relative;
+        top: 600px;
+        left: 10px;
+      }
+
+      body {
+        margin: initial;
+        padding: initial;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("Images/berry.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+        background-attachment: local;
+      }
+
+      img {
+        width: 650px;
+        height: 200px;
+        float: left;
+        margin-right: 50px;
+      }
+
+      .line-1 {
+        position: relative;
+        display: inline;
+      }
+
+      .line-1::after {
+        content: "";
+        width: 3px;
+        height: 900px;
+        display: block;
+        background-color: rgb(234, 220, 15);
+        position: absolute;
+        right: 370px;
+        top: 270px;
+      }
+
+      .line-2 {
+        position: relative;
+        display: inline;
+      }
+
+      .line-2::after {
+        content: "";
+        width: 1550px;
+        height: 3px;
+        display: block;
+        background-color: rgb(234, 234, 26);
+        position: absolute;
+        top: 200px;
+        left: -600px;
+      }
+
+      .line-3 {
+        position: relative;
+        display: inline;
+      }
+
+      .line-3::after {
+        content: "";
+        width: 1550px;
+        height: 3px;
+        background-color: rgb(234, 234, 26);
+        position: absolute;
+        top: 960px;
+        left: -600px;
+      }
+
+      .logo {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(75, 155, 75);
+        position: relative;
+        top: 5px;
+        left: -600px;
+      }
+
+      .about {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(75, 155, 75);
+        position: relative;
+        top: 5px;
+        left: -450px;
+      }
+
+      .our {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(75, 155, 75);
+        position: relative;
+        top: 5px;
+        left: -300px;
+      }
+
+      .events {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(120, 80, 10);
+        position: relative;
+        bottom: 45px;
+        left: 300px;
+      }
+      nav {
+        background: rgb(239, 237, 231);
+        height: 50px;
+        width: 1550px;
+        position: relative;
+        top: 248px;
+        left: 90px;
+      }
+
+      nav::before {
+        transition: all ease-in-out 1000ms;
+      }
+
+      .contact {
+        font-size: 42px;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(75, 155, 75);
+        position: relative;
+        top: 5px;
+        left: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="Images/ornament-logo.png" />
+    <nav>
+      <label class="logo">Home</label>
+      <label class="about">About Us</label>
+      <label class="our"> Our Products</label>
+      <label class="contact"> Contact Us</label>
+      <label class="events">Events</label>
+    </nav>
+
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="line-3"></div>
+
+    <ul>
+      <li
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 200;
+          color: green;
+          font-size: 16px;
+          position: relative;
+          top: 255px;
+          left: -670px;
+        "
+      >
+        Natural Holly Berry Garland, 5f - $74.99
+      </li>
+
+      <li
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 200;
+          color: green;
+          font-size: 16px;
+          position: relative;
+          top: 275px;
+          left: -670px;
+        "
+      >
+        Artificial Red Berry and White Edge Holly
+      </li>
+
+      <li
+        style="
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 200;
+          color: green;
+          font-size: 16px;
+          position: relative;
+          top: 290px;
+          left: -670px;
+        "
+      >
+        Chirstmas Berries Red Stems
+      </li>
+    </ul>
+    <p><em class="title">Order Event Trickets</em></p>
+
+    E-mail:<input type="text" class="mail_box" /> First Name:<input
+      type="text"
+      class="first_box"
+    />
+    Last Name:<input type="text" class="last_box" /> Address:<input
+      type="text"
+      class="address_box"
+    />
+    City:<input type="text" class="city_box" /> Province:<input
+      type="text"
+      placeholder="2-character code"
+      class="prvince_box"
+    />
+    Postal Code:<input
+      type="text"
+      placeholder="6 characters"
+      class="postal_box"
+    />
+    Phone Number:<input
+      type="text"
+      placeholder="999-999-999"
+      class="phone_box"
+    />
+    Event:<select name="opt" class="event_box">
+      <option value="a">Cookie Decoration Contest</option>
+      <option value="b">Other</option>
+    </select>
+    Order Type:
+    <select name="opt" class="order_box">
+      <option value="a">Member Package</option>
+      <option value="b">Other</option>
+    </select>
+    Number of Tickets:<input
+      type="text"
+      placeholder="Number of single tickets"
+      class="number_box"
+    />
+
+    <input type="radio" class="bill_box" value="Bill Me" />Bill Me<br />
+    <input type="radio" class="credit_box" value="Credit Card" />Credit Card<br />
+    Card Type:<select name="opt" class="card_box">
+      <option value="a">Visa</option>
+      <option value="b">American Express</option>
+      <option value="c">Other</option>
+    </select>
+    Card Number:<input type="text" placeholder="16 digits" class="digits_box" />
+    Expiration Date:<select name="opt" class="date_box">
+      <option value="a">January 16</option>
+      <option value="b">Other</option>
+    </select>
+
+    <button type="submit" class="submit_button">Submit</button>
+    <button type="reset" class="submit_button">Reset Feilds</button>
+  </body>
+</html>
